@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Tracker</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <center><img src="PHONE PE.jpg" alt="QR Code" width="250" height="300"></center>
+    <h1>Transaction Tracker</h1>
+    <b><p id="current-balance">Current Balance: $0.00</p></b> 
+
+    <form id="transaction-form">
+      <label for="amount">Transaction Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" required>
+
+      <label for="utr">UTR Number:</label>
+      <input type="text" id="utr" placeholder="Enter UTR number" required>
+
+      <button type="submit">Submit Transaction</button>
+    </form>
+
+    <h2>Transaction History</h2>
+    <ul id="transaction-history"></ul>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>

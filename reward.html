@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reward Page</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reward Points</h1>
+    <p id="reward-message">Loading reward points...</p>
+    <p><strong>Reward Points: </strong><span id="reward-points">0</span></p>
+
+    <h2>Available Rewards 
+      <h5>Only One Reward Can Be Redeemed Each Time</h5>
+    </h2>
+
+    <ul id="reward-list">
+      <!-- T-shirt Item -->
+      <li data-points="100">
+        <div class="reward-item">
+          <img src="tshirt.jpg" alt="T-shirt" class="reward-image" width="100" height="100">
+          <div class="reward-info">
+            <p>T-shirt - 100 Points</p>
+            <button onclick="redeemItem('T-shirt', 100)">Redeem</button>
+          </div>
+        </div>
+      </li>
+      
+      <!-- Sunglasses Item -->
+      <li data-points="200">
+        <div class="reward-item">
+<img src="sunglasses.jpg" alt="Sunglasses" class="reward-image" width="200" height="200">
+<div class="reward-info">
+            <p>Sunglasses - 200 Points</p>
+            <button onclick="redeemItem('Sunglasses', 200)">Redeem</button>
+          </div>
+        </div>
+      </li>
+      
+      <!-- Lens Item -->
+      <li data-points="150">
+        <div class="reward-item">
+          <img src="lens.jpg" alt="Lens" class="reward-image" width="200" height="200">
+          <div class="reward-info">
+            <p>Lens - 150 Points</p>
+            <button onclick="redeemItem('Lens', 150)">Redeem</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    
+    <p id="redeem-info"></p>
+  </div>
+    
+  <script src="reward.js"></script>
+</body>
+</html>
